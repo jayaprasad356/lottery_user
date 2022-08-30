@@ -4,7 +4,7 @@ $db = new Database();
 $db->connect();
 $db->sql("SET NAMES 'utf8'");
 $date=$_GET['input_date'];
-$sql = "SELECT * FROM `draw_resultfiles`";
+$sql = "SELECT * FROM `draw_resultfiles` WHERE date = '$date'";
 $db->sql($sql);
 $res = $db->getResult();
 foreach ($res as $row) {
