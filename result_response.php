@@ -26,7 +26,7 @@ foreach ($res as $row) {
     <div class="color-area">
         <div class="light-area">
             <div class="text-center">
-                <a href="<?=$row['file'];?>" class="custom-button2">Download</a>
+                <a href="https://lottery.greymatterworks.in/<?=$row['file'];?>" class="custom-button2">Download</a>
 
             </div>
 
