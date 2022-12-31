@@ -77,7 +77,12 @@ if (isset($_POST['btnAdd'])) {
                     <div class="col-lg-12">
                         <div class="header-top-area-inner">
                             <a href="index.php" class="logo">
-                                <img src="assets/images/logo.png" alt="">
+                            <?php 
+                                $sql="SELECT * FROM `company`";
+                                $db->sql($sql);
+                                $result = $db->getResult();
+                                ?>
+                                <img src="https://lottery.greymatterworks.in/<?php echo $result[0]['image'] ?>"  height="50px" alt="">
                             </a>
                         </div>
                     </div>
@@ -185,7 +190,7 @@ if (isset($_POST['btnAdd'])) {
                     </div>
                     <div class="log-reg-inner">
                         <h2 class="title">
-                            Welcome to Fantra
+                            Welcome to <?php echo $result[0]['name'] ?>
                         </h2>
                         <div class="main-content">
                             <form action="#">
