@@ -82,7 +82,7 @@ if (isset($_POST['btnAdd'])) {
                                 $db->sql($sql);
                                 $result = $db->getResult();
                                 ?>
-                                <img src="http://admin.andamanlottery.com/<?php echo $result[0]['image'] ?>"  height="50px" alt="">
+                                <img src="http://lottery.greymatterworks.in/php echo $result[0]['image'] ?>"  height="50px" alt="">
                             </a>
                         </div>
                     </div>
